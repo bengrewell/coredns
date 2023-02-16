@@ -7,8 +7,9 @@
 class coredns::service {
 
   docker::run { "coredns_docker_container":
-    image => "$::coredns::image_name",
+    image  => "$::coredns::image_name",
     detach => true,
+    net    => "host",
   }
 
   # docker::run { 'helloworld':
