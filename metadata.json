@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "source": "",
   "dependencies": [
-
+    { "name": "puppetlabs/docker", "version_requirement": ">= 3.0.0 < 6.0.2" }
   ],
   "operatingsystem_support": [
     {

@@ -5,4 +5,9 @@
 # @example
 #   include coredns::install
 class coredns::install {
+  include 'docker'
+
+  docker::image { "$::coredns::image_name":
+    ensure => $::coredns::package_ensure
+  }
 }
