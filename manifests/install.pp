@@ -10,4 +10,6 @@ class coredns::install {
   docker::image { "$::coredns::image_name":
     ensure => $::coredns::package_ensure
   }
+
+  # Create /opt/coredns
 }

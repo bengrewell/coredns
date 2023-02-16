@@ -5,4 +5,5 @@
 # @example
 #   include coredns::config
 class coredns::config {
+  # Create Corefile
 }

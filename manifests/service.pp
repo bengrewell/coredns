@@ -10,6 +10,8 @@ class coredns::service {
     image  => "$::coredns::image_name",
     detach => true,
     net    => "host",
+    volumes => ['/opt/coredns/:/root'],
+    command => '-conf /root/Corefile',
   }
 
   # docker::run { 'helloworld':
